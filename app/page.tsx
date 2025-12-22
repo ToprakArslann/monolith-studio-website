@@ -1,7 +1,11 @@
+import Hero from "@/components/hero";
+import { ReactLenis } from "lenis/react";
+
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-9xl">Home</h1>
+    <main className="w-full flex flex-col">
+      <ReactLenis root />
+      <Hero />
     </main>
   );
 }
