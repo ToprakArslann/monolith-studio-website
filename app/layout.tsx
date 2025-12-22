@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 const monumentExtended = localFont({
   variable: "--font-monument",
@@ -62,6 +63,7 @@ export default function RootLayout({
       <body
         className={`${monumentExtended.variable} ${monumentExtendedBold.variable} ${ronzino.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
