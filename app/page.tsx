@@ -1,6 +1,7 @@
 import Clients from "@/components/clients";
 import Hero from "@/components/hero";
 import SelectedWorks from "@/components/selectedWorks";
+import Marquee from "@/components/marquee";
 import { ReactLenis } from "lenis/react";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Clients />
       <SelectedWorks />
+      <Marquee />
     </main>
   );
 }
