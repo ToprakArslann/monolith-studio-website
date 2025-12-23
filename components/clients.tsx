@@ -39,11 +39,11 @@ export default function Clients() {
         },
     ];
     return (
-        <div className="w-full h-screen flex flex-col items-center justify-center p-4 gap-4 relative">
+        <div className="w-full h-screen flex flex-col items-center justify-center p-4 gap-4 relative overflow-hidden">
             <div className="w-full h-full flex flex-col gap-4">
-                <h2 className="text-4xl font-monument-bold text-center">Our Clients</h2>
-                <div className="w-full h-full flex flex-row items-center justify-between gap-4">
-                    <div className="w-1/4 aspect-3/4 relative flex items-center justify-center">
+                <h2 className="text-4xl font-monument-bold text-center uppercase">Our Clients</h2>
+                <div className="w-full h-full flex flex-row items-center justify-between gap-20">
+                    <div className="w-2/5 aspect-3/4 relative flex items-center justify-center">
                         <Image src="/client1.png" alt="client1" fill className="object-cover" />
                     </div>
                     <div className="w-3/4 flex flex-col items-center justify-center overflow-hidden relative">

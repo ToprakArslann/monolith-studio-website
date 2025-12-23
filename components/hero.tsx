@@ -2,24 +2,32 @@
 import { easeInOut, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { useRef } from "react";
+import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
     const container = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: container,
-        offset: ["start start", "1.05 end"]
+        offset: ["start start", "1.08 end"]
     })
     const width = useTransform(scrollYProgress, (val) => `calc(300px + (${val} * (100% - 300px)))`)
     const height = useTransform(scrollYProgress, (val) => `calc(400px + (${val} * (100% - 400px)))`)
     const rotate = useTransform(scrollYProgress, [0, 0.9], ["30deg", "0deg"])
-    const xBig1 = useTransform(scrollYProgress, [0, 0.9], ["-4%", "-6%"])
-    const xBig2 = useTransform(scrollYProgress, [0, 0.9], ["9.5%", "11.5%"])
+    const xBig1 = useTransform(scrollYProgress, [0, 1], ["-4%", "-6%"])
+    const xBig2 = useTransform(scrollYProgress, [0, 1], ["9.5%", "11.5%"])
 
     const studio = "MONOLITH STUDIO MONOLITH STUDIO";
     return (
         <div ref={container} className="w-full h-[300vh] flex justify-center relative">
             <div className="w-full h-screen sticky top-0 flex items-center justify-center overflow-hidden">
+                <div className="w-full absolute bottom-0 flex items-end flex-row justify-between text-xl">
+                    <div className="flex flex-col">
+                        <p>Established 2023</p>
+                        <p>Based in Istanbul, Turkey</p>
+                    </div>
+                    <p className="flex flex-row gap-2">Scroll To Explore <span><ArrowDown /></span></p>
 
+                </div>
                 <div className="absolute top-25 w-full flex justify-center">
                     <motion.div className="overflow-hidden absolute left-1/2 -translate-x-1/2 top-0">
                         <motion.h1 style={{ x: xBig1 }} className="font-monument-bold text-[11vw] leading-[0.9] whitespace-nowrap ">
