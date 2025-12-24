@@ -5,11 +5,13 @@ import Marquee from "@/components/marquee";
 import { ReactLenis } from "lenis/react";
 import Works from "@/components/works";
 import Studio from "@/components/studio";
+import Loading from "./loading";
 
 export default function Home() {
   return (
     <main className="w-full flex flex-col">
       <ReactLenis root />
+      <Loading />
       <Hero />
       <Clients />
       <SelectedWorks />
