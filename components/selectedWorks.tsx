@@ -45,10 +45,11 @@ export default function SelectedWorks() {
                 <div className="w-75 h-150 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
                     <motion.div
                         initial={{ translateX: "0%", translateY: "0%", rotate: "0deg", zIndex: "1", filter: "brightness(60%)" }}
-                        animate={{ translateX: "100%", translateY: "5%", rotate: "10deg" }}
+                        whileInView={{ translateX: "100%", translateY: "5%", rotate: "10deg" }}
                         whileHover={{ filter: "brightness(100%)", rotate: "0deg", zIndex: "10", transition: { duration: 0.1 } }}
                         exit={{ zIndex: "1" }}
                         transition={{ duration: 1 }}
+                        viewport={{ amount: 0.4, once: true }}
                         className="w-75 aspect-3/4 absolute cursor-pointer"
                         onMouseEnter={() => setHoveredWork(works[4])}
                         onMouseLeave={() => setHoveredWork(null)}
@@ -57,10 +58,11 @@ export default function SelectedWorks() {
                     </motion.div>
                     <motion.div
                         initial={{ translateX: "0%", translateY: "0%", rotate: "0deg", zIndex: "2", filter: "brightness(60%)" }}
-                        animate={{ translateX: "50%", translateY: "0%", rotate: "5deg" }}
+                        whileInView={{ translateX: "50%", translateY: "0%", rotate: "5deg" }}
                         whileHover={{ filter: "brightness(100%)", rotate: "0deg", zIndex: "10", transition: { duration: 0.1 } }}
                         exit={{ zIndex: "2" }}
                         transition={{ duration: 1 }}
+                        viewport={{ amount: 0.4, once: true }}
                         className="w-75 aspect-3/4 absolute cursor-pointer"
                         onMouseEnter={() => setHoveredWork(works[3])}
                         onMouseLeave={() => setHoveredWork(null)}
@@ -69,10 +71,11 @@ export default function SelectedWorks() {
                     </motion.div>
                     <motion.div
                         initial={{ translateX: "0%", translateY: "0%", rotate: "0deg", zIndex: "3", filter: "brightness(60%)" }}
-                        animate={{ translateX: "0%", translateY: "0%", rotate: "0deg" }}
+                        whileInView={{ translateX: "0%", translateY: "0%", rotate: "0deg" }}
                         whileHover={{ filter: "brightness(100%)", rotate: "0deg", zIndex: "10", transition: { duration: 0.1 } }}
                         exit={{ zIndex: "3" }}
                         transition={{ duration: 1 }}
+                        viewport={{ amount: 0.4, once: true }}
                         className="w-75 aspect-3/4 absolute cursor-pointer"
                         onMouseEnter={() => setHoveredWork(works[2])}
                         onMouseLeave={() => setHoveredWork(null)}
@@ -81,10 +84,11 @@ export default function SelectedWorks() {
                     </motion.div>
                     <motion.div
                         initial={{ translateX: "0%", translateY: "0%", rotate: "0deg", zIndex: "4", filter: "brightness(60%)" }}
-                        animate={{ translateX: "-50%", translateY: "0%", rotate: "-5deg" }}
+                        whileInView={{ translateX: "-50%", translateY: "0%", rotate: "-5deg" }}
                         whileHover={{ filter: "brightness(100%)", rotate: "0deg", zIndex: "10", transition: { duration: 0.1 } }}
                         exit={{ zIndex: "4" }}
                         transition={{ duration: 1 }}
+                        viewport={{ amount: 0.4, once: true }}
                         className="w-75 aspect-3/4 absolute cursor-pointer"
                         onMouseEnter={() => setHoveredWork(works[1])}
                         onMouseLeave={() => setHoveredWork(null)}
@@ -93,10 +97,11 @@ export default function SelectedWorks() {
                     </motion.div>
                     <motion.div
                         initial={{ translateX: "0%", translateY: "0%", rotate: "0deg", zIndex: "5", filter: "brightness(60%)" }}
-                        animate={{ translateX: "-100%", translateY: "5%", rotate: "-10deg" }}
+                        whileInView={{ translateX: "-100%", translateY: "5%", rotate: "-10deg" }}
                         whileHover={{ filter: "brightness(100%)", rotate: "0deg", zIndex: "10", transition: { duration: 0.1 } }}
                         exit={{ zIndex: "5" }}
                         transition={{ duration: 1 }}
+                        viewport={{ amount: 0.1, once: true }}
                         className="w-75 aspect-3/4 absolute cursor-pointer"
                         onMouseEnter={() => setHoveredWork(works[0])}
                         onMouseLeave={() => setHoveredWork(null)}

@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import SelectedWorks from "@/components/selectedWorks";
 import Marquee from "@/components/marquee";
 import { ReactLenis } from "lenis/react";
+import Works from "@/components/works";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Clients />
       <SelectedWorks />
       <Marquee />
+      <Works />
     </main>
   );
 }
