@@ -4,6 +4,7 @@ import SelectedWorks from "@/components/selectedWorks";
 import Marquee from "@/components/marquee";
 import { ReactLenis } from "lenis/react";
 import Works from "@/components/works";
+import Studio from "@/components/studio";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SelectedWorks />
       <Marquee />
       <Works />
+      <Studio />
     </main>
   );
 }

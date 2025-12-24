@@ -136,7 +136,7 @@ const WorkItem = memo(function WorkItem({
         <motion.div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            animate={{ color: overlayState === "visible" ? "#ffffff" : "#000000", borderColor: "#000000" }}
+            animate={{ color: overlayState === "visible" ? "#ffffff" : "#000000", borderColor: "#1D1D1D" }}
             transition={{ duration: 0.3 }}
             className={`w-full h-20 flex flex-row items-center justify-between p-2 border-b-3 ${isFirst ? "border-t-3" : ""} block overflow-hidden relative cursor-pointer`}
         >
@@ -160,7 +160,7 @@ const WorkItem = memo(function WorkItem({
                     ease: "easeOut"
                 }}
                 onAnimationComplete={handleAnimationComplete}
-                className="w-full h-full absolute top-0 left-0 bg-black"
+                className="w-full h-full absolute top-0 left-0 bg-[#1D1D1D]"
             />
         </motion.div>
     );
